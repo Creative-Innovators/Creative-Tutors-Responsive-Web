@@ -1,0 +1,440 @@
+
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+   
+  .topnav {
+    overflow: hidden;
+    background-color: rgb(34, 33, 33);
+  
+  }
+
+  #myTopnav .active{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size:larger;
+  }
+
+  #register{
+    background-color: #6eb0cf;
+  }
+
+  #myTopnav{
+    position: fixed;
+    top: 0; /* Position the navbar at the bottom of the page */
+    width: 100%; /* Full width */
+  }
+
+  main {
+    margin-bottom: 30px; /* Add a bottom margin to avoid content overlay */
+  }
+   
+  .topnav .links {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .topnav .active {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+
+  }
+   
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+   
+  .topnav a.active {
+    background-color: rgba(172,127,67,0.3);
+    color: white;
+  }
+   
+  .topnav .icon {
+    display: none;
+  }
+
+  .icon{
+    font-size: 38px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+   
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+   
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+}
+
+ .homepage{
+  max-width: 0% auto;
+  max-height: 0% auto;
+  /* background-image: url(tutor.jpg); */
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url(images/i.jpg);
+ 
+} 
+
+.content{
+  
+  font-size: 20px;
+  border: 1px dotted #000000;
+  padding: 10px;
+  width: 500px;
+  justify-content: center;
+  text-align: center;
+  margin-top: 40px;
+  max-width: 100%; /* Adjust as needed */
+  background-color: #5555559c;
+  color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  text-align: center;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* Our Team Section Styling */
+
+#team {
+  text-align: center;
+  background: rgba(216, 241, 238, 0.2);
+}
+
+.team-member img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.team-member {
+  text-align: center;
+  width: 200px;
+  margin: 50px;
+}
+
+/* */
+
+.section{
+  display: inline-block;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.section h1{
+  margin-top: 40px;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 40px;
+  letter-spacing: 5px;
+  /* text-transform: uppercase; */
+  color: #000000;
+}
+
+.container-1{
+  display: block;
+  float: left;
+  width: 50%;
+  padding: 20px 40px;
+}
+
+.container-2{
+  display: block;
+  float: right;
+  width: 50%;
+  padding: 20px 40px;
+}
+
+.faq{
+  max-width: 100%;
+  margin-bottom: 50px;
+  padding: 25px 30px;
+  background-color: #fff;
+  box-shadow: 5px 5px 5px 5px #aaa;
+  border-radius: 10px;
+}
+
+.question{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  letter-spacing: 2px;
+}
+
+.question h2{
+  font-size: 22px;
+  color: #000000;
+}
+
+.question i{
+  font-size: 24px;
+  color: #105cbe;
+  cursor: pointer;
+}
+
+.answer{
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s;
+}
+
+.answer p{
+  padding-top: 20px;
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+
+.faq.active .answer{
+  max-height: 250px;
+}
+
+@media screen and (max-width: 850px){
+
+  .section{
+      display: table;
+  }
+
+  .container-1{
+      width: 100%;
+      padding: 0 20px;
+  }
+
+  .container-2{
+      width: 100%;
+      padding: 0 20px; 
+  }
+
+  .question h2{
+      font-size: 17px;
+  }
+
+  .answer p{
+      font-size: 14px;
+  }
+  
+}
+
+/*  */
+.contact-us-section{
+  display: flex;
+  justify-content: center;
+}
+
+.contact-container {
+  width: 600px;
+  height: 400px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  margin-top: 20px;
+}
+
+.input-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+}
+
+label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  color: #999;
+  pointer-events: none;
+  transition: 0.2s ease-out;
+}
+
+input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
+  top: -20px;
+  left: 0;
+  font-size: 12px;
+  color: #333;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #6c86a1;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #06b300;
+}
+
+/*Styling the footer section*/
+footer {
+  background-color: #333;
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+  
+.back-to-top a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+  
+.back-to-top a:hover {
+  background-color: #555;
+}
